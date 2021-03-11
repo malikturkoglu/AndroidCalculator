@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="29dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/TakingHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Please enter your Height"/>
+
+    <EditText
+        android:id="@+id/TakingWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TakingHeight"
+        android:inputType="numberDecimal"
+        android:hint="Please enter your Weight"/>
+
+    <Button
+        android:id="@+id/button_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TakingWeight"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="248dp"
+        android:text="Calculate" />
+
+
+</RelativeLayout>
